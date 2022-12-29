@@ -47,7 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /*Neutral*/
 	--clr-scampi: hsl(234, 25%, 52%);
 	--clr-darkgray: hsl(232, 10%, 56%);
-	--clr-black: hsl(233, 54%, 16%);
+	--clr-dark-blue: hsl(233, 54%, 16%);
 	--clr-white: hsl(0, 0%, 100%);
 
 /*Font*/
@@ -59,7 +59,9 @@ p, h1, h2, h3, h4, h5, h6 {
 	--f-styles-heading-small: 800 24px/28px 'Plus Jakarta Sans', sans-serif;
 }
 
-
+footer {
+	background: var(--clr-dark-blue);
+}
 
 /*button hover*/
  /*{
