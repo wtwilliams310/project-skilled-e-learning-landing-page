@@ -1,0 +1,78 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+#root, #__next {
+	isolation: isolate;
+}
+
+
+:root {
+
+/*Primary*/
+	--clr-hover-gradient-blue-rose: linear-gradient(hsl(322, 87%, 55%), hsl(237, 100%, 64%));
+	--clr-hover-gradient-rose-tomato: linear-gradient(#FF6F48, #F02AA6);
+
+	--clr-gradient-neonBlue-rose: linear-gradient(#4851FF, #F02AA6);
+	--clr-gradient-rose-tomato: linear-gradient(#F02AA6, #FF6F48);
+	--clr-carnation-pink: hsl(341, 100%, 83%);
+	--clr-violet-red: hsl(341, 92%, 62%);
+
+/*Neutral*/
+	--clr-scampi: hsl(234, 25%, 52%);
+	--clr-darkgray: hsl(232, 10%, 56%);
+	--clr-black: hsl(233, 54%, 16%);
+	--clr-white: hsl(0, 0%, 100%);
+
+/*Font*/
+	--f-styles-body-medium: 500 18px/28px 'Plus Jakarta Sans', sans-serif;
+	--f-styles-body-small: 700 16px/28px 'Plus Jakarta Sans', sans-serif;
+	--f-styles-heading-xlarge: 800 56px/70px 'Plus Jakarta Sans', sans-serif;
+	--f-styles-heading-large: 800 40px/51px 'Plus Jakarta Sans', sans-serif;
+	--f-styles-heading-medium: 800 32px/40px 'Plus Jakarta Sans', sans-serif;
+	--f-styles-heading-small: 800 24px/28px 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+/*button hover*/
+ /*{
+	background: var(--clr-hover-gradient-rose-tomato);
+	background-color: rgba(255, 255, 255, 0.5);
+	background-blend-mode: lighten;
+}*/
+
+
+
+
+
+
+
+
+
