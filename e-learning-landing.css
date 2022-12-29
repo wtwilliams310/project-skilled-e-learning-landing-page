@@ -36,7 +36,7 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
 
 /*Primary*/
-	--clr-hover-gradient-blue-rose: linear-gradient(hsl(322, 87%, 55%), hsl(237, 100%, 64%));
+	--clr-hover-gradient-blue-rose: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
 	--clr-hover-gradient-rose-tomato: linear-gradient(#FF6F48, #F02AA6);
 
 	--clr-gradient-neonBlue-rose: linear-gradient(#4851FF, #F02AA6);
@@ -123,6 +123,7 @@ header, section {
 	font: var(--f-styles-body-small);
 	color: var(--clr-darkgray);
 }
+ 
 
 .site-btn {
 	text-decoration: none;
@@ -133,20 +134,23 @@ header, section {
 	font: var(--f-styles-body-small);
 }
 
-.site-info-container a:focus {
+.site-info-container a:where(:hover,:focus) {
 	background: var(--clr-hover-gradient-rose-tomato);
 	background-color: rgba(255, 255, 255, 0.5);
 	background-blend-mode: lighten;
 }
 
 .stats-image {
-	margin-top: 1.5rem;
+/*	margin-top: 1.5rem;*/
+	margin: auto;
+	padding-top: 1.5rem;
 }
 
 .course-container {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2.5rem;
+	justify-content: center;
 
 }
 
@@ -157,6 +161,7 @@ header, section {
 	padding: 1.5rem 1.5rem;
 	color: var(--clr-white);
 	border-radius: 15px;
+
 }
 
 .course-container h2 {
@@ -176,6 +181,10 @@ header, section {
 	font: var(--f-styles-body-medium-bold);
 }
 
+.course-container a:where(:hover, :focus) {
+	color: var(--clr-carnation-pink);
+}
+
 .card {
 	display: grid;
 	gap: 1em;
@@ -185,7 +194,7 @@ header, section {
 	background-color: var(--clr-white);
 }
 
-.card-image {
+.card-image { 
 	position: absolute;
 	top: -1.5rem;
 	left: 1.5rem;
@@ -208,10 +217,70 @@ header, section {
 	font: var(--f-styles-body-small);
 }
 
+.footer a:where(:hover, :focus) {
+	background: var(--clr-hover-gradient-blue-rose);
+	background-color: rgba(255, 255, 255, 0.5);
+	background-blend-mode: lighten;
+}
+
 .logo-footer {
 	width: 89px;
 	height: 25px;
 	margin: auto 0;
 }
+
+
+
+@media screen and (min-width: 762px) and (max-width: 1024px) {
+
+	.content {
+		position: relative;
+		margin: 1.5rem 0;
+		gap: 6.3em;
+		overflow-y: visible;
+		overflow-x: hidden;
+	}
+
+	.header, .site-info-container, .course-container {
+		margin: 0 2.3rem;
+	}
+
+	.site-info-container {
+		width: 26rem;
+	}
+
+	.site-info-container h1 {
+		font: var(--f-styles-heading-large);
+	}
+
+	.stats-image {
+		position: absolute;
+		top: -8.8rem;
+		right: -18.5rem;
+/*		overflow: hidden;*/
+	}
+
+	.course-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 7rem;
+		grid-gap: 3.5rem 0.8rem;
+	}
+
+	.course-banner {
+		padding-top: 3rem;
+	}
+
+	.footer {
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
 
 
