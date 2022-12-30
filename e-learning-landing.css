@@ -102,9 +102,15 @@ header, section {
 	border-radius: 25px;
 }
 
+.header a:where(:hover,:focus) {
+	background: var(--clr-scampi);
+/*	background-color: rgba(255, 255, 255, 0.5);*/
+/*	background-blend-mode: lighten;*/
+}
+
 .logo-header {
-	width: 89px;
-	height: 25px;
+	width: 5.563rem;
+	height: 1.563rem;
 	margin: auto 0;
 }
 
@@ -192,6 +198,7 @@ header, section {
 	padding: 3rem 1.5rem 2rem 1.5rem;
 	border-radius: 10px;
 	background-color: var(--clr-white);
+	width: 100%;
 }
 
 .card-image { 
@@ -227,6 +234,11 @@ header, section {
 	width: 89px;
 	height: 25px;
 	margin: auto 0;
+	margin-left: 1rem;
+}
+
+.footer-btn {
+	margin-right: 1rem;
 }
 
 
@@ -257,7 +269,6 @@ header, section {
 		position: absolute;
 		top: -8.8rem;
 		right: -18.5rem;
-/*		overflow: hidden;*/
 	}
 
 	.course-container {
@@ -274,10 +285,172 @@ header, section {
 	.footer {
 		margin: 0;
 	}
+	.logo-footer {
+		margin-left: 2rem;
+	}
+
+	.footer-btn {
+		margin-right: 2rem;
+	}
+
 }
 
 
 
+@media screen and (min-width: 1025px) and (max-width: 1305px) {
+	.content {
+		position: relative;
+		margin: 0;
+		gap: 11em;
+		overflow-y: visible;
+		overflow-x: hidden;
+	}
+
+	.header {
+		margin: 1.5rem 10.3rem 0 10.3rem;
+		z-index: 1;
+	}
+
+	.header-btn, .footer-btn, .site-btn {
+		font: var(--f-styles-body-medium-bold);
+		padding: .85rem 2rem;
+		border-radius: 50px;
+	}
+
+
+	.site-info-container, .course-container {
+		margin: 0 3.3rem;
+		gap: 2rem;
+	}
+
+	.site-info-container {
+/*		width: 29rem;*/
+		width: 40%;
+	}
+
+	.site-info-container h1 {
+		font: var(--f-styles-heading-xlarge);
+	}
+
+	.site-info-container p {
+		font: var(--f-styles-body-medium);
+		width: 20rem;
+	}
+
+	.stats-image {
+		position: absolute;
+		top: -10.8rem;
+		right: -21rem;
+	}
+
+	.course-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 7rem;
+		grid-gap: 3.5rem 2rem;
+
+	}
+
+	.course-banner {
+		padding-top: 3.3rem;
+		font-size: 1.75rem;
+	}
+
+	.course-container h2{
+		font: var(--f-styles-heading-small);
+	}
+
+	.footer {
+		margin: 0;
+	}
+
+	.logo-footer {
+		margin-left: 3rem;
+	}
+
+	.footer-btn {
+		margin-right: 3rem;
+	}
+
+}
+
+
+@media screen and (min-width: 1306px) {
+	.content {
+		position: relative;
+		margin: 0;
+		gap: 11em;
+		overflow-y: visible;
+		overflow-x: hidden;
+	}
+
+	.header {
+		margin: 1.5rem 10.3rem 0 10.3rem;
+		z-index: 1;
+	}
+
+	.header-btn, .footer-btn, .site-btn {
+		font: var(--f-styles-body-medium-bold);
+		padding: .85rem 2rem;
+		border-radius: 50px;
+	}
+
+
+	.site-info-container, .course-container {
+		margin: 0 10.3rem;
+		gap: 2rem;
+	}
+
+	.site-info-container {
+		width: 30rem;
+		width: 40%;
+	}
+
+	.site-info-container h1 {
+		font: var(--f-styles-heading-xlarge);
+	}
+
+	.site-info-container p {
+		font: var(--f-styles-body-medium);
+		width: 27rem;
+	}
+
+	.stats-image {
+		position: absolute;
+		top: -10.8rem;
+		right: -21rem;
+	}
+
+	.course-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 7rem;
+		grid-gap: 3.5rem 2rem;
+
+	}
+
+	.course-banner {
+		padding-top: 3.3rem;
+		font-size: 1.75rem;
+	}
+
+	.course-container h2{
+		font: var(--f-styles-heading-small);
+	}
+
+	.footer {
+		margin: 0;
+	}
+
+	.logo-footer {
+		margin-left: 10.3rem;
+	}
+
+	.footer-btn {
+		margin-right: 10.3rem;
+	}
+
+}
 
 
 
