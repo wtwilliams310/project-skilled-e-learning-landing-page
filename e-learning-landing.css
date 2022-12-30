@@ -104,8 +104,6 @@ header, section {
 
 .header a:where(:hover,:focus) {
 	background: var(--clr-scampi);
-/*	background-color: rgba(255, 255, 255, 0.5);*/
-/*	background-blend-mode: lighten;*/
 }
 
 .logo-header {
@@ -404,7 +402,9 @@ header, section {
 	.site-info-container {
 		width: 30rem;
 		width: 40%;
+		max-width: 622px;
 	}
+
 
 	.site-info-container h1 {
 		font: var(--f-styles-heading-xlarge);
